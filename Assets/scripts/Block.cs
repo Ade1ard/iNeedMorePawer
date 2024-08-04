@@ -1,18 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class Block : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Destroy()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject);
     }
 }
