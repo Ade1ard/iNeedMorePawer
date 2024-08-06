@@ -10,7 +10,7 @@ public class GranadeThrower : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Instantiate(_granadePrefab, _throwPoint.position, _throwPoint.rotation).Throw(_throwPoint.forward * _throwForce);
+            Instantiate(_granadePrefab, _throwPoint.position, _throwPoint.rotation).Throw(_throwPoint.forward * _throwForce); 
         }
     }
 }
